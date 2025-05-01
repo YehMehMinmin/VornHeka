@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Elijah Connlor - Vörn Heka Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: #0d0d0d;
+        color: #f0f0f0;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .navbar {
+        background-color: #111;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+  
+      .navbar nav a {
+        color: #f0f0f0;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
+  
+      main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+  
+      .character-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+  
+      .character-header img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #fcd467;
+        transition: transform 0.4s ease;
+      }
+  
+      .character-header img:hover {
+        transform: scale(1.1);
+      }
+      .character-name {
+      font-size: 3rem;
+      margin-top: 1rem;
+      color: #fcd467;
+    }
+
+    .character-title {
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+
+    .info-basica, .character-stats {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .info-basica table, .character-stats table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info-basica th, .info-basica td, 
+    .character-stats th, .character-stats td {
+      border: 1px solid #333;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #fcd467;
+      border-bottom: 2px solid #fcd467;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      font-size: 0.9rem;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      padding: 0.7rem 1.5rem;
+      background-color: #fcd467;
+      color: #0d0d0d;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #fcd467;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      border: 2px solid #fcd467;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Vörn Heka Wiki</h1>
+        <nav>
+          <a href="VornHekaWiki.HTML">Inicio</a>
+          <a href="index.html">Capítulos</a>
+
+        </nav>
+      </header>
+      
+      <main>
+      
+        <div class="character-header">
+          <img src="imgvh/ElijahPFP.jpg" alt="Elijah Connlor">
+          <h1 class="character-name">Elijah Connlor</h1>
+          <p class="character-title">El que busca, y pone orden.</p>
+        </div>
+      
+        <section class="info-basica">
+          <h2>Información Básica</h2>
+          <table>
+            <tr><th>Nombre completo</th><td>Elijah Connlor</td></tr>
+            <tr><th>Edad</th><td>210 años</td></tr>
+            <tr><th>Altura</th><td>1.92 metros</td></tr>
+            <tr><th>Especie</th><td>Angel (Trono)</td></tr>
+            <tr><th>Género</th><td>Masculino</td></tr>
+            <tr><th>Fecha de Nacimiento</th><td>14 de Junio</td></tr>
+            <tr><th>Afiliaciones</th><td>Defarnis, Custos</td></tr>
+            <tr><th>Relaciones</th><td>Stellrinu (amigo), Luxu (amigo), Åke (amigo), V (mejor amigo) </td></tr>
+            <tr><th>Habilidades Especiales</th><td>Magia de Luz Santa, Poder Angelical, Lanza se convierte en Hacha gracias a gemas magicas.</td></tr>
+            <tr><th>Primera aparición</th><td>Vörn Heka: Folliecycles.</td></tr>
+            <tr><th>Segunda aparición</th><td>Vörn Heka: Everia.</td></tr>
+          </table>
+        </section>
+      
+        <section class="character-stats">
+          <h2>Estadísticas de Combate</h2>
+          <table>
+            <tr><th>Fuerza</th><td>★★★★☆</td></tr>
+            <tr><th>Velocidad</th><td>★★★☆☆</td></tr>
+            <tr><th>Resistencia</th><td>★★★★★</td></tr>
+            <tr><th>Magia</th><td>★★★★☆</td></tr>
+            <tr><th>Inteligencia</th><td>★★★★★</td></tr>
+          </table>
+        </section>
+      
+        <section>
+          <h2>Biografía</h2>
+          <p>Elijah Connlor nació un 14 de Junio en Oroleós, en una familia muy religiosa. Entre 8 hermanos, él era el menor, y el que nació con una variación genética extraña; Cuatro brazos completamente funcionales y sanos. Solo porque sus hermanos eran mayores, con hijos y trabajo, no sufrió más molestia que la de su padre. Un señor alcohólico, ludópata. ¿Su madre? Monja, la única que lo amaba y hacía ropa especial. Elijah trabajaba vendiendo paja para su familia de vez en cuando, apoyando a su madre y a la adicción de su padre. Vivió bajo enseñanzas religiosas, siendo su casa una Iglesia hasta que su padre vino borracho, y golpeó a su madre hasta la muerte. Elijah, con todo el peso en su corazón, tuvo que escapar a otra ciudad. De todos modos, tuvo que seguir trabajando hasta el día que se le acusó de robo falsamente. Cadena perpetua, varios abusos de poder, discriminación. Todas las palabras de la gente resonaban en su cabeza, hasta que cuando cumplió 19, se le declaró inocente. De todos modos salió débil, tropezando con sus propios pies en un templo/biblioteca abandonado. Su visión se volvió borrosa, tirado en el piso... Pero fué encontrado. ¿Qué son estas bolitas con cuerpo?, se preguntó. "No te preocupes humano, te cuidaré", uno de ellos dijo. Elijah estaba confundido, pero entre esos pensamientos de confusión había agradecimiento. El que le había hablado se llamaba "V", presumiblemente el único con nombre. Elijah seguía trabajando, pero con compañía, con un amigo. Siguiendo sus costumbres, Elijah se unió a una iglesia, donde conoció a un hombre llamado "Abraham". Le ofreció trabajo después de unos meses, y Elijah le dió a V un último adiós. "Volveré, V. Serán solo unas pocas semanas". Las semanas se volvieron meses. Meses, años. Años... En el Limbo, cuerpo controlado por el que se hacía llamar "Abraham", que en realidad era alguien denominado "The Commander". Agonía y soledad hacían eco en la mente de Elijah, hasta que fué rescatado por Stellrinu y Luxu. Pero con un precio a pagar: V desaparecido. Aunque se le complicó ganar la confianza de Stellrinu y Luxu, pronto se volvieron amigos... Pero ELijah siguió buscando a V. Se volvió sacerdote en un templo, conoció a varios, y continuará su camino por lo llamado Vörn Heka.</p>
+        </section>
+      
+        <section>
+          <h2>Curiosidades</h2>
+          <ul>
+            <li>Elijah, al igual que Luxu y Ake, se suponía que iba a ser villano.</li>
+            <li>Elijah significa "Mi señor es mi dios".</li>
+            <li>Elijah originalmente iba a tener cuernos.</li>
+            <li>Es el único que ha tenido contacto prolongado con los Cutulūs</li>
+          </ul>
+        </section>
+      
+        <section>
+            <h2>Frases Famosas</h2>
+            <blockquote>
+              "Hay que agradecer la ayuda, ¿sabes? Somos inmortales, pero no indestructibles."
+              "Nunca quise lasmitaros, Defarnis. Mi cuerpo y sangre estaban bajo control... Pero supongo que este es el final."
+              "Y si pasan 100 años, 100 años te buscaré. Y si he de morir, moriré buscandote."
+              "¡Ya deja mi cuerpo, deja mi mente en paz, carajo!"
+               "Vayan en paz."
+            </blockquote>
+          </section>
+        
+          <section>
+            <h2>Galería</h2>
+            <div class="gallery">
+              <img src="imgvh/ElijahAndDiscardedChar.png" alt="Elijah y un personaje descartado.">   
+              <img src="imgvh/ElijahConcept.png" alt="Elijah, retrato de su concepto.">  
+              <img src="imgvh/ElijahConceptPicrew.png" alt="Primera imagen de Elijah, Picrew."> 
+              <img src="imgvh/ElijahConceptArt.png" alt="Elijah, arte conceptual, 2022."> 
+              <img src="imgvh/ElijahBrawlhalla.png" alt="Elijah en Brawlhalla."> 
+              <img src="imgvh/ElijahBrawlhallaAttack.png" alt="Elijah en acción, Brawlhalla."> 
+              <img src="imgvh/ElijahWeaponLance.png" alt="Arma de Elijah, lanza."> 
+            </div>
+          </section>
+        
+          <a href="VornHekaWiki.HTML" class="back-button">⬅️ Volver al Inicio</a>
+        
+        </main>
+        
+        <footer>
+          &copy; 2025 Vörn Heka. Universo creado por Minmin. 🚀✨
+        </footer>
+        
+        </body>
+        </html>

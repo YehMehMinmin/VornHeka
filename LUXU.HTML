@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxu Rymure - Vörn Heka Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: #0d0d0d;
+        color: #f0f0f0;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .navbar {
+        background-color: #111;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+  
+      .navbar nav a {
+        color: #f0f0f0;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
+  
+      main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+  
+      .character-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+  
+      .character-header img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #b651e6;
+        transition: transform 0.4s ease;
+      }
+  
+      .character-header img:hover {
+        transform: scale(1.1);
+      }
+      .character-name {
+      font-size: 3rem;
+      margin-top: 1rem;
+      color: #b651e6;
+    }
+
+    .character-title {
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+
+    .info-basica, .character-stats {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .info-basica table, .character-stats table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info-basica th, .info-basica td, 
+    .character-stats th, .character-stats td {
+      border: 1px solid #333;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #b651e6;
+      border-bottom: 2px solid #b651e6;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      font-size: 0.9rem;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      padding: 0.7rem 1.5rem;
+      background-color: #b651e6;
+      color: #0d0d0d;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #b651e6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      border: 2px solid #b651e6;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Vörn Heka Wiki</h1>
+        <nav>
+              <a href="VornHekaWiki.HTML">Inicio</a>
+              <a href="index.html">Capítulos</a>
+    
+        </nav>
+      </header>
+      
+      <main>
+      
+        <div class="character-header">
+          <img src="imgvh/LuxuPFP.png" alt="Luxu Rymure">
+          <h1 class="character-name">Luxu Rymure</h1>
+          <p class="character-title">El superador.</p>
+        </div>
+      
+        <section class="info-basica">
+          <h2>Información Básica</h2>
+          <table>
+            <tr><th>Nombre</th><td>Luxu Rymure</td></tr>
+            <tr><th>Edad</th><td>320 años</td></tr>
+            <tr><th>Altura</th><td>1.82</td></tr>
+            <tr><th>Especie</th><td>Inccubilia (no-Incubo)</td></tr>
+            <tr><th>Género</th><td>Masculino</td></tr>
+            <tr><th>Fecha de Nacimiento</th><td>20 Noviembre</td></tr>
+            <tr><th>Afiliaciones</th><td>Defarnis, Custos</td></tr>
+            <tr><th>Relaciones</th><td>Luss (amiga, muerta), Stellrinu (mejor amigo), Elijah (amigo), Åke (amigo)</td></tr>
+            <tr><th>Habilidades Especiales</th><td>Control Parcial Sombrío, Invocación de Cadenas y Tentáculos Mágicos, Látigo se convierte en Ballesta gracias a gemas mágicas.</td></tr>
+            <tr><th>Primera aparición</th><td>Vörn Heka: Folliecycles.</td></tr>
+            <tr><th>Segunda aparición</th><td>Vörn Heka: Everia.</td></tr>
+          </table>
+        </section>
+      
+        <section class="character-stats">
+          <h2>Estadísticas de Combate</h2>
+          <table>
+            <tr><th>Fuerza</th><td>★★★★☆</td></tr>
+            <tr><th>Velocidad</th><td>★★★★★</td></tr>
+            <tr><th>Resistencia</th><td>★★★☆☆</td></tr>
+            <tr><th>Magia</th><td>★★★★☆</td></tr>
+            <tr><th>Inteligencia</th><td>★★★★☆</td></tr>
+          </table>
+        </section>
+      
+        <section>
+          <h2>Biografía</h2>
+          <p>Luxu Rymure nació un día 20 de Noviembre, en el Averno, como un Incubilio. Desde chico le inculcaron que debía ser como los demás Incubos; Servir para el capricho, sin embargo, Luxu no entendía. Se negó a ser usado, y sus padres lo vendieron a una organización para "corregirlo". No pasó mucho, pero conoció a Luss, una Sucubilia. Se hicieron amigos, hablaron, y compartieron ambos un gusto por el arte. Crecieron, y Luxu conoció a Derek, quien se mostró amoroso al inicio, pero al final lo quiso usar para su gusto. Luxu rompió con él con ayuda de Luss, pero pasó lo peor: Derek abusó de él. Raptado, solo, en una habitación con cadenas por dos días agonizantes. Luss, como buena amiga, lo ayudó a escapar, así sin volverse a topar a Derek por un buen tiempo hasta que la Guerra Avernal comenzó, gracias a una mujer llamada Alarica, donde Luxu y Luss formaron una resistencia contra ella. "Únete, Luxu.", le dijo Alarica al joven. "Ven a mí, y dejarás todo atrás."...¿Pero, por qué él?. Luxu rechazó. ¿Error? Quizá, pues regresó a su base y todos, menos Luss quien yacía herida y un miembro más, estaban muertos. Pasó otro tiempo, y se encontró rodeado por 4 hombres: Helion, Badriyah, Mahlon, y Derek. Presumiblemente, los primeros tres eran sus amigos. Lo rodearon, y le dieron la tortura del abuso por 1 hora hasta que Luss los encontró, y ahuyentó. Luxu estaba ahí, en el suelo. Le dolía el cuerpo, sangraba como nunca, y temblaba. No dejaba que Luss lo tocara, ¿cómo se supone que lo iba a ayudar? Consiguió convencerlo, y ahí mismo lo curó... Sin embrgo, Luxu se hartó de que lo vean como débil, algo dentro de Luxu se quebró. Estaba harto de que lo vieran como débil. Sentado en una esquina, adolorido, hecho trizas, sangrando por donde no debería, tomó una decisión que lo cambiaría. Llegó el día del enfrentamiento final contra Alarica, donde se supo que Derek y compañía estaban en su ejército. Luxu se armó de valor y los aniquiló, uno por uno, pero él y Luss murieron en batalla... Y Luxu despertó en un lugar extraño, conocido como el Limbo. Pasó 50 años ahí hasta que fué invocado por error, gracias a Stellrinu. Se volvieron buenos amigos, salvando vidas, luchando por lo que es bueno y conociendo más gente; Entre ellos, Elijah y Åke. Iniciando un camino, llamado Vörn Heka.</p>
+        </section>
+      
+        <section>
+          <h2>Curiosidades</h2>
+          <ul>
+            <li>Su nombre iba a ser Luxumure Rimure, pero fué descartado.</li>
+            <li>Se llegó a enamorar de Stellrinu, pero ese sentimiento no duró más de un año.</li>
+            <li>"Incubilio/Sucubilio" es el término para referirse a un demonio ya sea incubo o sucubo, que sólo nace con las características de uno. Es decir, no nacen con deseo sexual.</li>
+            <li>En la historia beta fué pareja de Elijah y Åke. No será pareja de ninguno ahora.</li>
+            <li>Su nombre significa "Sálvate", pero fuera de la historia, es un juego de palabras.</li>
+            <li>Su cumpleaños es el mismo día de la creación de su personaje, y es el segundo en aparecer en la historia beta.</li>
+            <li>Iba a ser villano en su concepto al igual que ELijah y Ake, pero fué descartado.</li>
+          </ul>
+        </section>
+      
+        <section>
+            <h2>Frases Famosas</h2>
+            <blockquote>
+              "Me rompiste, pero solamente me hiciste más fuerte."
+              "¿En serio? ¿Ataques mentales con recuerdos? He visto villanos más creativos, Eternal."
+              "N-no es que me dé miedo, es que... ¡Al demonio! ¡Lo enfrentaré!"
+              "¡YA DIJE QUE NO HAGO ESAS COSAS!- ¿Ah?- ¿Quién eres?"
+              "Gracias, Stellrinu. No sé qué haría sin ti."
+              "¿En- en serio me ves como un guerrero?"
+              "No esperabas que fuera así, ¿eh? ¡Este soy yo!"
+            
+            </blockquote>
+          </section>
+        
+          <section>
+            <h2>Galería</h2>
+            <div class="gallery">
+              <img src="imgvh/LuxuPrimerDiseño.jpg" alt="Primer diseño de Luxu">   
+              <img src="imgvh/LuxuBrawlhalla.png" alt="Luxu diseño en Brawlhalla"> 
+              <img src="imgvh/LuxuBrawlhallaAttack.png" alt="Luxu en acción, Brawlhalla."> 
+              <img src="imgvh/LuxuAlma.png" alt="Alma de Luxu"> 
+              <img src="imgvh/LuxuWeaponWhip.png" alt="Látigo de Luxu">
+              <img src="imgvh/LuxuConcepto2.png" alt="Luxu diseño en la historia beta."> 
+              <img src="imgvh/LuxuConcepto2ConAke.png" alt="Luxu beta, junto a Åke."> 
+              <img src="imgvh/LuxuWeaponsConcepts.jpg" alt="Diseños de las armas de Luxu."> 
+              <img src="imgvh/LuxuConceptoPFP.png" alt="Luxu beta, dibujo del 2021."> 
+              
+            </div>
+          </section>
+        
+          <a href="VornHekaWiki.HTML" class="back-button">⬅️ Volver al Inicio</a>
+        
+        </main>
+        
+        <footer>
+          &copy; 2025 Vörn Heka. Universo creado por Minmin. 🚀✨
+        </footer>
+        
+        </body>
+        </html>

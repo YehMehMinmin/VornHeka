@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Åke Oblivion - Vörn Heka Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: #0d0d0d;
+        color: #f0f0f0;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .navbar {
+        background-color: #111;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+  
+      .navbar nav a {
+        color: #f0f0f0;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
+  
+      main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+  
+      .character-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+  
+      .character-header img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #2E8B57;
+        transition: transform 0.4s ease;
+      }
+  
+      .character-header img:hover {
+        transform: scale(1.1);
+      }
+      .character-name {
+      font-size: 3rem;
+      margin-top: 1rem;
+      color: #2E8B57;
+    }
+
+    .character-title {
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+
+    .info-basica, .character-stats {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .info-basica table, .character-stats table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info-basica th, .info-basica td, 
+    .character-stats th, .character-stats td {
+      border: 1px solid #333;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #2E8B57;
+      border-bottom: 2px solid #2E8B57;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      font-size: 0.9rem;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      padding: 0.7rem 1.5rem;
+      background-color: #2E8B57;
+      color: #0d0d0d;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #2E8B57;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      border: 2px solid #2E8B57;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Vörn Heka Wiki</h1>
+        <nav>
+          <a href="VornHekaWiki.HTML">Inicio</a>
+          <a href="index.html">Capítulos</a>
+        </nav>
+      </header>
+      
+      <main>
+      
+        <div class="character-header">
+          <img src="imgvh/AkePFP.png" alt="Åke Oblivion">
+          <h1 class="character-name">Åke Oblivion</h1>
+          <p class="character-title">El libre.</p>
+        </div>
+      
+        <section class="info-basica">
+          <h2>Información Básica</h2>
+          <table>
+            <tr><th>Nombre completo</th><td>Åke Oblivion</td></tr>
+            <tr><th>Edad</th><td>2 años (JAJAJ YA SÉ)</td></tr>
+            <tr><th>Altura</th><td>1.79</td></tr>
+            <tr><th>Especie</th><td>Angel orgánico (Virtud)</td></tr>
+            <tr><th>Género</th><td>Masculino</td></tr>
+            <tr><th>Fecha de Nacimiento</th><td>26 de Septiembre</td></tr>
+            <tr><th>Afiliaciones</th><td>Las Helleboras (Anteriormente), Defarnis, Custos</td></tr>
+            <tr><th>Relaciones</th><td>Stellrinu (amigo), Luxu (amigo), Elijah (amigo)</td></tr>
+            <tr><th>Habilidades Especiales</th><td>Instinto Ligero, Invocación de Balas, Rifles se transforman en un Lanzacohete gracias a gemas mágicas.</td></tr>
+            <tr><th>Primera aparición</th><td>Vörn Heka: Folliecycles.</td></tr>
+            <tr><th>Segunda aparición</th><td>Vörn Heka: Everia.</td></tr>
+          </table>
+        </section>
+      
+        <section class="character-stats">
+          <h2>Estadísticas de Combate</h2>
+          <table>
+            <tr><th>Fuerza</th><td>★★★☆☆</td></tr>
+            <tr><th>Velocidad</th><td>★★★☆☆</td></tr>
+            <tr><th>Resistencia</th><td>★★★☆☆</td></tr>
+            <tr><th>Magia</th><td>★★★☆☆</td></tr>
+            <tr><th>Inteligencia</th><td>★★★★☆</td></tr>
+          </table>
+        </section>
+      
+        <section>
+          <h2>Biografía</h2>
+          <p>Åke Oblivion nació el 26 de octubre, creado por Alarica, destinado a destruir. Adulto, programado para ser alegre y como un rayo de sol al lado de los Defarnis per serio y dictador con Las Helleboras. Su creadora le enseñó a engañar, y a dejarse pisotear por ella. Salvó a Luxu de una caída de un demonio Chaork, y ganó la confianza de los Defarnis... pero aunque su propósito era acabar con uno, pronto sintió algo que no debía. Emociones. Genuina felicidad al estar con ellos; y se odió a sí mismo por su propósito, deseando ser alguien más, sintiendose miserable, mirando al cielo implorando piedad y cambio. Un día, se desapareció repentinamente, y los Defarnis lo buscaron. Se toparon a un Åke reseteado, que atacó a Luxu cuando lo vió, y no les quedó de otra más que pelear. Se sintieron engañados, traicionados. "¿Åke? ¡¿Cómo pudiste!? ¿Cómo dejamos que esto pasara?" Se lamentó un Stellrinu traicionado. "Dejamos nuestra guardia caer. Hemos sido engañados." Observó un Elijah decepcionado... "¡¡ÅKE!!, MALDITO, ¡¡CONFIAMOS EN TÍ!! ¡¡¡TE ODIO!!!", gritó  Luxu, herido. Åke peleó con furia, pero sus palabras, las palabras de los que fueron sus amigos le trajeron de vuelta el recuerdo. Su alma. El odio y maldad salieron de grietas que pronto se volvieron energía y salieron como un fuerte rayo al cielo. Y se reveló contra su enemiga, su creadora. Su madre. Volvieron a confiar en él, y ahora él está en el camino de Vörn Heka.</p>
+        </section>
+      
+        <section>
+          <h2>Curiosidades</h2>
+          <ul>
+            <li>El cumpleaños de Åke es exactamente 2 semanas antes de iniciar la historia.</li>
+            <li>Se suponía que iba a ser un demonio.</li>
+            <li>Su nombre significa "Ancestro" en Sueco, pero en lore, es "Nacido".</li>
+            <li>En dualidad, su alma fué la que más tardó en regresar.</li>
+            <li>Es el más joven de los Defarnis. Mientras ellos tienen siglos de edad, él solo tiene un dígito.</li>
+            <li>De broma le celebran "El día del Niño".</li>
+          </ul>
+        </section>
+      
+        <section>
+            <h2>Frases Famosas</h2>
+            <blockquote>
+              "No me deformes más."
+              "¿Por qué siguen confiando en mí?... No lo merezco."
+              "¡Deja de darme órdenes! Ellos son mis amigos, ¡no los lastimaré!"
+              "Así que así se siente ser feliz... Tener alma,"
+              "Cualquier dios que me escuche, ¿Por qué me has destinado a esto?"
+              "Gracias, chicos. Gracias por salvarme."
+              "Soy libre, pero mi libertad duele."
+            
+            </blockquote>
+          </section>
+        
+          <section>
+            <h2>Galería</h2>
+            <div class="gallery">
+              <img src="imgvh/AkeNowAndThen.png" alt="Diseño de Åke, 2025 y 2021">   
+              <img src="imgvh/AkeConcept2.png" alt="Dibujo de Åke, 2022"> 
+              <img src="imgvh/TwoConcepts.jpg" alt="Diseños de Åke, 2022-2023">
+              <img src="imgvh/AkeBrawlhalla.png" alt="Åke, Brawlhalla">
+              <img src="imgvh/AkeEmoteBrawl.jpg" alt="Åke emoji, Brawlhalla">   
+              <img src="imgvh/AkeWithLuxuConcept.png" alt="Concepto de Åke y Luxu, 2022">
+              <img src="imgvh/AkeSoul.png" alt="Alma de Åke">        
+            </div>
+          </section>
+        
+          <a href="VornHekaWiki.HTML" class="back-button">⬅️ Volver al Inicio</a>
+        
+        </main>
+        
+        <footer>
+          &copy; 2025 Vörn Heka. Universo creado por Minmin. 🚀✨
+        </footer>
+        
+        </body>
+        </html>

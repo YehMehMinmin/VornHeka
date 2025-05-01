@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Stellrinu Triviny - Vörn Heka Wiki</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #111;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar nav a {
+      color: #f0f0f0;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .character-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .character-header img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ff66c4;
+      transition: transform 0.4s ease;
+    }
+
+    .character-header img:hover {
+      transform: scale(1.1);
+    }
+
+    .character-name {
+      font-size: 3rem;
+      margin-top: 1rem;
+      color: #ff66c4;
+    }
+
+    .character-title {
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+
+    .info-basica, .character-stats {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .info-basica table, .character-stats table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info-basica th, .info-basica td, 
+    .character-stats th, .character-stats td {
+      border: 1px solid #333;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #ff66c4;
+      border-bottom: 2px solid #ff66c4;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      font-size: 0.9rem;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      padding: 0.7rem 1.5rem;
+      background-color: #ff66c4;
+      color: #0d0d0d;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #ff3399;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      border: 2px solid #ff66c4;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <h1>Vörn Heka Wiki</h1>
+  <nav>
+    <a href="VornHekaWiki.HTML">Inicio</a>
+    <a href="index.html">Capítulos</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="character-header">
+    <img src="imgvh/StellPFP.png" alt="Stellrinu Triviny">
+    <h1 class="character-name">Stellrinu Triviny</h1>
+    <p class="character-title">El que cabalga por las estrellas.</p>
+  </div>
+
+  <section class="info-basica">
+    <h2>Información Básica</h2>
+    <table>
+      <tr><th>Nombre completo</th><td>Stellrinu Triviny</td></tr>
+      <tr><th>Edad</th><td>676 años</td></tr>
+      <tr><th>Altura</th><td>1.99 metros</td></tr>
+      <tr><th>Especie</th><td>Demonio (BigBull) </td></tr>
+      <tr><th>Género</th><td>Masculino</td></tr>
+      <tr><th>Fecha de Nacimiento</th><td>7 de octubre</td></tr>
+      <tr><th>Afiliaciones</th><td>Defarnis, Custos</td></tr>
+      <tr><th>Relaciones</th><td>Boris (hijo), Nekomaru Yoshida (esposo), Luxu (mejor amigo), Elijah (amigo), Åke (amigo)</td></tr>
+      <tr><th>Habilidades Especiales</th><td>Magia Almática, Báculo-Guadaña, Hechizos, ataques variados.</td></tr>
+      <tr><th>Primera aparición</th><td>Vörn Heka: Folliecycles.</td></tr>
+      <tr><th>Segunda aparición</th><td>Vörn Heka: Everia.</td></tr>
+    </table>
+  </section>
+
+  <section class="character-stats">
+    <h2>Estadísticas de Combate</h2>
+    <table>
+      <tr><th>Fuerza</th><td>★★★★☆</td></tr>
+      <tr><th>Velocidad</th><td>★★★☆☆</td></tr>
+      <tr><th>Resistencia</th><td>★★★★★</td></tr>
+      <tr><th>Magia</th><td>★★★★★</td></tr>
+      <tr><th>Inteligencia</th><td>★★★★★</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Biografía</h2>
+    <p>Stellrinu Triviny, cuyo nombre significa "El que Cabalga por las Estrellas", nació el 7 de octubre, en la era de la Inquisición. Su famila no era grande: Él, su hermana y su mamá. ¿Su padre? Perdido en el mar. Vivió su niñez y adolescencia en lo que era considerado como paz en ese entonces en el país de Straherm. A sus 17, vió como una multitud de personas se llevaban a su hermana y a su madre, acusandolas de brujas. Él sabía la verdad, las quiso defender, pero no lo dejaron declarar. Stellrinu entonces quiso enfrentarse a la Iglesia, declarando ante el juzgado la injusticia de lo sucedido... Pero nadie lo escuchó. Lo acusaron de conspiración, de hereje, y lo atraparon en multitud. Sin embargo, él consiguió escapar, pero no escapó del bosque cercano que pronto estalló en fuego por las antorchas de los pueblerinos, así teniendo su primera muerte. Visión borrosa, confusión. ¿El dolor de las quemaduras, acaso fué por solo 1 minuto?. Pronto se encontraba en medio de un limbo, blano, con aguas color obsidiana. Stellrinu, asustado, empezó a correr sin rumbo, así encontrando más sitios. De sitios, tuvo su primer enfrentamiento con un demonio. Perdió, entrenó solo, y se volvió más fuerte cada demonio derrotado... Y conoció a una mujer. Su nombre era Tetsu Chiba. Mujer alta, cabellos amatista, y mirada brutal. Lucharon juntos durante un tiempo, y ella le reveló que, de hecho, su dios sí existía. Consciente, ahí, pero sin importarle. Esto hizo que Stellrinu se enojara, claro, ¿Por qué a su dios no le importaba su mundo?, si era suyo, su creación. Stellrinu decidió que, al encontrarlo, se enfrentaría a él. Y en efecto, Tetsu lo entrenó. Sin embargo por el tiempo pasado pronto se enamoraron, y el gusto no duró mucho por la muerte en guerra de Tetsu. Esto le dió a Stellrinu la valentía y más decisión en derrotar a Dios... Hasta que por fin estuvieron cara a cara. "Padre maldito, indigno", fué llamado por el mortal. Dios, o Jungan, enfurecido atacó al chico, quien rindió buena pelea más no ganó. "¿Osas venir a luchar contra mí, inmundo mortal? ¡Dime tus razones, o sufre mi voluntad!", reclamó Jungan. Stellrinu entonces procedió a explicarle la sotuación completa; Su negligencia, su indiferencia, su falta de humanidad. Jungan abrió los ojos como platos. "Humano," Habló "Has venido a darme la paliza, y una noticia horrible. Vos has de ser mi juzgador, el que vaya a obrar justicia a mi mundo." dichose eso, mandó a Stellrinu al mundo mortal una vez más, pero cambiado. Cabello rosa, ojos rosas, y la marca divina. Pasó luchando, conoció a Luxu, ayudó a los Cutulū, salvó a Elijah, y finalmente, conoció a Berserker. El villano, sediento de poder lo vió como candidato para su cena. L intentó, pero fué humillado. No derrotado, pero sí humillado, brutalmene. Desde ahí, nació el odio entre ellos. Y así fue, peleas, guerras... Derrota. Regreso. Vörn Heka.</p>
+  </section>
+
+  <section>
+    <h2>Curiosidades</h2>
+    <ul>
+      <li>Su bastón mágico se transforma en una guadaña gracias a la magia de unas gemas.</li>
+      <li>Al pobre a veces le dicen que parece Papá Noel por su abrigo, lo cual es gracioso pero curioso.</li>
+      <li>Es bien conocido por la humanidad.</li>
+      <li>Fue creado en 2015, inició siendo una chica.</li>
+      <li>Casi se divorcia de Nekomaru.</li>
+      <li>Tiene apariciones honoríficas en dos lores diferentes, ambos conectados a Vörn Heka.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Frases Famosas</h2>
+    <blockquote>
+      "Lo hicimos, lo hacemos, y lo haremos por tí. Por la gente, por la humanidad."
+      "Por eso tanta gente viene a destruir sus iglesias."
+      "La gente viene a mí por esperanza, y se las doy. Porque eso es lo que soy, lo que ellos ven... Esperanza."
+      "¿Mi hijo? Mi mayor orgullo, no sólo por serlo, si no por ser un gran guerrero. Un gran hombre."
+      "...Eres una leyenda, Luxu. No te dejes caer por los recuerdos de tu pasado."
+      "¿¡Dejas caer a tu creación, porque según tú, son inferiores!? ¡¡MALDITO!!, ¡NO MERECES SER DIOS!"
+      "Nekomaru, siempre fuiste un maldito, pero me demostraste que no. Eres un buen hombre, un buen guerrero... Un buen esposo y padre. Te amo, mi amor. Mi maldito y viejo amor."
+      "Desde hoy, amigos míos, no seremos más Defarnis. Seremos Custos, los que no trabajan para el dios al que nosotros, ni la humanidad, no le importamos."
+    
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="imgvh/StellrinuConcepto1.png" alt="Concept Art Stellrinu 1">
+      <img src="imgvh/StellrinuBrawlAttack.png" alt="Stellrinu en acción, Brawlhalla, con guadaña">
+      <img src="imgvh/StellrinuBrawl.png" alt="Stellrinu Brawlhalla">
+      <img src="imgvh/StelrinuFirstConcept.png" alt="Primer diseño Stellrinu, adaptado a reciente dibujo.">
+      <img src="imgvh/StellrinuPoster.png" alt="Poster Vörn Heka, Stellrinu y su vida pasada, Rinu, bailando en el vacío.">
+      <img src="imgvh/StellrinuWithoutShirt.png" alt="Stellrinu cuerpo, con y sin camisa. Concepto">
+      <img src="imgvh/Stellrinuchibi.png" alt="Stellrinu chiquito.">
+      <img src="imgvh/StellrinuSoul.png" alt="El alma de Stellrinu.">
+      <img src="imgvh/StellrinuScythe.png" alt="Arma de Stellrinu, guadaña.">
+      <img src="imgvh/StellrinuScytheConcept.png" alt="Arma de Stellrinu, guadaña. Concepto.">
+    </div>
+  </section>
+
+  <a href="VornHekaWiki.HTML" class="back-button">⬅️ Volver al Inicio</a>
+
+</main>
+
+<footer>
+  &copy; 2025 Vörn Heka. Universo creado por Minmin. 🚀✨
+</footer>
+
+</body>
+</html>

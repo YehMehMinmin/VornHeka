@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vörn Heka</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #1b1b1b;
+      color: #f0f0f0;
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background-image: url('imgvh/StellrinuPoster.png');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 10px black;
+      transition: background 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    #container {
+      display: flex;
+      height: calc(100vh - 250px);
+    }
+
+    nav {
+      width: 250px;
+      background-color: #2b2b2b;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      border-right: 2px solid #555;
+      transition: all 0.3s ease;
+    }
+
+    nav h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #555;
+      padding-bottom: 5px;
+      color: #ffcc00;
+    }
+
+    nav button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      border-radius: 8px;
+      transition: background 0.3s;
+      font-weight: bold;
+    }
+
+    nav button:hover {
+      background-color: #666;
+      transform: scale(1.05);
+    }
+
+    #content {
+      flex-grow: 1;
+      padding: 30px;
+      overflow-y: auto;
+      background: #2b2b2b;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .chapter-title {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #ffcc00;
+      text-shadow: 2px 2px 5px black;
+      animation: slideIn 1s ease-out;
+    }
+
+    .chapter-text {
+      line-height: 1.8;
+      font-size: 18px;
+      white-space: pre-wrap;
+      color: #ddd;
+      text-align: justify;
+      opacity: 0;
+      animation: fadeInText 2s forwards;
+    }
+
+    @keyframes fadeInText {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+
+    /* Efectos hover en los botones */
+    nav button:active {
+      transform: scale(0.98);
+      transition: transform 0.1s ease-out;
+    }
+
+    /* Fondo dinámico en la barra lateral */
+    nav:hover {
+      background-color: #333;
+      box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.5);
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vörn Heka</h1>
+  </header>
+
+  <div id="container">
+    <nav>
+      <h2>Capítulos-Temporada 1</h2>
+      <button onclick="loadChapter(0)">Capítulo 1: Amenaza</button>
+      <button onclick="loadChapter(1)">Capítulo 2: uy</button>
+      <button onclick="loadChapter(2)">Capítulo 3: perate we</button>
+      <!-- Puedes seguir añadiendo más capítulos aquí -->
+    </nav>
+
+    <div id="content">
+      <div class="chapter-title" id="chapterTitle">¡Bienvenido al lore de Vörn Heka! Selecciona un capítulo a tu izquierda</div>
+      <div class="chapter-text" id="chapterText">Aquí aparecerá el contenido, buena lectura!! :3. Si deseas saber más de los personajes, visita: (ingresar link cuando esté ya listo.)</div>
+    </div>
+  </div>
+
+  <script>
+    const chapters = [
+      {
+        title: "Capítulo 1: Amenaza",
+        text: `Luxu atacó con el látigo, dándole en el cuello al Demonio que lo superaba por metros. El sonido sónico del impacto retumbó por las orejas de los tres presentes, siendo hora de Elijah de golpear con su lanza al estómago de la criatura.
+
+Aturdida se cayó hacia atrás, dándole la oportunidad a Stellrinu de clavarle un guadañazo en la cabeza. Aprovechó y guñó con fuerza, lo tiró a las esquinas del templo. 
+Luxu estaba preparándose una vez más para usar su arma. Sin embargo falló el golpe y desvió al demonio contra la pared, causando un temblor lo suficientemente fuerte como para tirar un pilar en su cabeza.\n\nLuxu pegó un grito de horror y se cubrió la cabeza, cerrando los ojos con fuerza esperando el impacto del peso sobre su cuerpo. \n\n  Pero se oyó un estruendo. \n\n Y una risa relajada. \n\n  Luxu abrió los ojos con lentitud, estos haciéndose más grandes a medida que veía las alas bicolor que yacían quietas frente a él. El desconocido se acomodó el lanzacohetes en el hombro, y se volteó a verlo.
+"¿No planeas morir hoy, cierto?" Preguntó con chiste el pálido antes de voltear a atacar al demonio, dejando a los tres Defarnis quietos, confundidos.\n\n Luxu respondió a la voz; -"N... ¿No?"
+Y quedó en shock tratando de procesar lo sucedido, antes de brincar del espanto por la voz de Stellrinu que hizo eco por el templo.\n\n -"¡Deja de estar viendo a la nada y sigue peleando!"
+Gritó aún dándole golpes a la criatura, la cual ya se había enojado.\n\n Luxu tartamudeó, -"Ah, sí."
+Y tiró su látigo al cuerno más grande del demonio, amarrandolo. Se quejó mientras hacía fuerza para mantener al demonio atado e impedir su movimiento, y con Elijah su lanza cambió a hacha, y voló en dirección a la espalda de la criatura. Con la ayuda del desconocido logró aturdir de nuevo a la amenaza, clavándole el hacha al lado de su columna antes de jalarla y aventarla a Stellrinu.\n\n El último respondió dándole el ataque mortal al ente, cortándole la cabeza con el sonido de la hoja cortando la carne del ser, despojándose su vida y cayendo al suelo, no sin antes dejar salir un aire verde intenso por dónde la herida.
+
+———
+Después de la pelea, Luxu se acercó junto a Stellrinu para ver el cadáver. Uno de ellos limpió el polvo del brazo de la cosa, dejando ver marcas verdes que iluminaban su cuerpo. \n\n Ya un poco más calmado, Luxu habló. -"Qué extraño"
+Comentó en voz baja, volteando a ver a Stellrinu.
+
+-"Los demonios. Están de vuelta."\n\n -"¿Qué pudo haber sido?"
+Stellrinu se llevó la mano al mentón, acariciando su barba con el pulgar.
+"Debieron regresar por algo, esto no es normal."\n\n Luxu se encogió de hombros y Stellrinu se quedó pensando en las posibles causas, mientras Elijah entrevistaba al extraño cuyo nombre resultó ser Åke.
+Al oír el nombre Stellrinu volteó a verlos a ambos, mirando al nuevo con rostro de desconfianza antes de volver a ver al cadáver del ente. \n\n Stellrinu, observando el cuerpo del demonio, habló una vez más. 
+-"Han vuelto, en efecto. Si hay uno aquí entonces debieron de haber más, y no nos notificaron de absolutamente nada."
+Elijah suspiró. \n\n -"Vamos a notificar."
+Hizo la señal con la cabeza, mientras Luxu y Stellrinu caminaban, Åke los seguía hacia la camioneta, la cual estaba más adelante para no ser aplastada. \n\n Fueron a ver a Ronin, el Oráculo encargado.
+——
+Una vez frente al templo bajaron los cuatro de inmediato, siguiendo a paso rápido a Stellrinu quien tenía el enojo por las nubes.
+Tocó la puerta con fuerza siguiendo un patrón rítmico, casi tirando las puertas del lugar. Luxu y Elijah compartieron miradas de nervios, mientras Åke jugó con sus dedos debido a que no sabía qué hacer. Es decir, se conocieron hace 20 minutos.
+Ronin entonces abrió la puerta. \n\n -"¡Hola! ¿Ya derrotaron al demonio?-"
+Fué interrumpido por el fuerte agarre de Stellrinu quien lo agarró con rabia por el cuello de su ropa.
+-"¿¡Cuántos más atacaron las ciudades?!"
+Casi casi le escupía en la cara por el enojo, Elijah teniendo que intervenir.\n\n -"Hey, hey. No lo mates hoy."
+Los separó con prisa y vió como Ronin jalaba aire, casi ahogándose. 
+Ronin tosió y se acomodó el cuello, sosteniéndose en la puerta.
+-"No sé, no puedo decirte-" \n\n Stellrinu ya estaba harto.
+-"¡¡Me vas a decir porque me lo vas a decir!!"
+Si no fuera porque Luxu lo alcanzó a agarrar por la cintura ya le hubiera clavado el golpe de su vida. Se veía como le salía el humo por la nariz, y se oían sus dientes crujir.\n\n-"¡¡Ya, ya, bueno!! Empezaron hace 4 meses, pero nuestro dios los consideró una amenaza hasta el día de hoy."
+Ronin después de decirle la verdad se intentó cubrir la cabeza para no ser atacado por la rabia, pero en cambio recibió gritos. \n\n -"¡¿Sabes cuánta gente ha muerto?! ¿¡Cuánta gente perdió a sus seres amados por sus idioteces?!" \n\n -"Rinu, por favor..." Luxu suplicó, tratando de jalar a Stellrinu hacia atrás. \n\n Stellrinu gritó furioso, -"¡Al demonio con ustedes, cabrones! Por eso tanta gente viene a romper sus iglesias, ¡Agradece que me están agarrando, de otra forma te hubiera arrancado las plumas!" \n\n Åke solo se limitó a hacer una mueca de incomodidad, mirando a otro lugar y deseando irse. 
+-"Vámonos de aquí."
+Miró a Luxu, quien ayudó a jalar a Stellrinu de vuelta a la camioneta. Åke los siguió por detrás, sin atreverse a decir nada. \n\n ———
+El viaje a casa fué de todo menos cómodo, Luxu viendo sus zapatos, Elijah centrado en el vehículo, Åke incómodo por lo sucedido y Stellrinu viéndolo de reojo. Una mala palabra y le iban a colmar más la paciencia.
+Luxu iba a decir algo, pero se quedó seco de palabras; Un sonido cortado siendo lo único que salió de sus labios.
+Entonces Elijah habló. 
+-"¿Cómo supiste dónde estábamos?"
+Preguntó a Åke, quien brincó levemente por la pregunta repentina. \n\n -"Ah, eso es fácil. La pelea se veía desde lejos, y decidí ir a ayudarlos. ¡No sabía que había llegado en el momento indicado!" Respondió con una sonrisa, rascando su nuca. \n\n Stellrinu suspiró, vapor saliendo de su nariz. -"Wow. Pero qué coincidencia."
+El sarcasmo hizo más pesado el ambiente, notandose la desconfianza y el enojo de este hombre. \n\n Luxu tuvo que relajar el ambiente. -"Eh, gracias de todos modos."
+Después de decir eso se mordió las uñas por los siguientes 5 minutos; El sonido de sus dientes cortando el cartílago de sus dedos siendo lo único que cubría el silencio incómodo del auto. \n\n Fué momento de dejar a los demás en sus casas. Claro, al nuevo no, pues lo desconocían por completo; a duras penas se aprendieron su nombre. Dejaron a Åke cerca de una estación de autobuses para después dejar a Luxu en su trabajo, el cual empezaba en 15 minutos. De las 2 PM a las 3:30 AM. \n\n ———Hogar——— \n\n Stellrinu suspiró al ver la camioneta desaparecer de su vista, antes de meterse a su casa y sentarse directamente en su sillón. No prendió televisores, no revisó celulares. Una vez sentado aventó las llaves de la casa en la mesa, antes de llevarse las manos al cabello y respirar con fuerza por la irritación.
+Lo que más lo enojaba eran las negligencias de parte del dios, Jungan, y por como el Oráculo encargado seguía sus acciones como fiel ovejita.Se quedó viendo la pantalla apagada de su TV. El reflejo de su primogénito apareció de pronto, este bajando las escaleras. \n\n -"¡Papá! ¿Qué pasa?", Con tono relajado se dirigió al sillón, recargandose de espaldas y dejando descansar sus brazos en sus costados. -"¿De nuevo no les avisaron nada?" \n\n -"Sí, hijo. Eso mismo."
+Stellrinu elajó su voz ligeramente antes de voltear a verlo.
+-"4 meses de desastres por entes antiguos, y apenas hoy nos dijeron." \n\n El joven tronó su lengua y sisseó.
+-"¿Por qué son así?."
+Se acomodó el chaleco de cuero, antes de recordar que le iba a enseñar algo a su padre.
+"¡Espérate apá, mira qué traje!"
+Se subió corriendo las escaleras, emocionado.  Las acciones de su hijo le hacían sol a su día de estrés; Aunque su hijo se ve como un apático, siempre sabe cómo alegrarlo.
+El joven bajó con una playera roja, en la cuál se leía la palabra "NO.", con un corazón encima. Stellrinu se rió por la sorpresa, pues esa era una camisa que usaba en su juventud. -"La pedí de mi talla, así no rompes la tuya. ¿Qué tal?" \n\n ———Ciudad y departamentos.——— \n\n Luxu entró a su departamento casi tirando las llaves al piso debido a su prisa para entrar. No era del tipo de persona que le gustaba andar a solas, pues traía la incómoda sensación en la nuca que le hacía rascarse sus brazos.
+Entró a prisas y cerró la puerta para empezar a ponerse su uniforme de oficina, el cuál olvidó planchar anoche.
+Suspiró al ver la camisa blanca arrugada y se la puso de todos modos; No era que tuviese 3 pares, tampoco costeaba para tanto.
+Salió a prisas de nuevo, agarrando su maletín con hojas desordenadas, y fué a la estación de autobuses.
+El camino fué más incómodo de lo que creyó, pero de todos modos logró llegar al trabajo.
+— Tiempo: 13 horas. —
+
+Luxu tuvo que trabajar horas extras. El cansancio y estrés que sentía en su cuerpo era más de lo que podía cargar; Sus dedos ardían por las mordidas que les dió y su cabello estaba absolutamente despeinado. 
+Suspiró y guardó la tabla de excel, acto seguido se estiró en su silla. No podía dormir esa noche pues tomó varias tazas de café.
+3 llamadas perdidas a Elijah para que lo fuera a recoger, pues el sacerdote estaba profundamente dormido
+Llegó y se estacionó frente a las oficinas, Luxu salió y de nuevo entró con apuros puesto a que comenzó a llover.  \n\n  -"Horas extra, ¿eh?"
+Elijah rompió el hielo una vez vió a Luxu entrar en la camioneta, mojado.
+-"Ese jefe tuyo no te dejará en paz ni un poquito."  \n\n Luxu suspiró, agarrando la toalla que Elijah le estaba ofreciendo. -"Es un bastardo."
+Sus orejas se levantaron al oír a la camioneta empezar a avanzar, su mirada viajando de los botones a la ventanilla. \n\n -"Seguro que te pagan pronto, tranquilo. Además, si te suben el precio de la renta sabes que estoy aquí para apoyarte."
+Puso su mano libre en el hombro de Luxu, antes de darle una pequeña sonrisa. \n\n Luxu lo volteó a ver. -"Ah- buh..."
+Se quedó quieto ante el gesto de Elijah, pero sonrió ligeramente antes de volver a ver a la ventana.
+-"Gracias." \n\n Continuaron el viaje en silencio por unos minutos. De pronto, el rubio recordó al hombre que los ayudó hace unas horas. \n\n -"¿Qué tal ese chico de cabello morado?"
+Dió la vuelta al volante para tomar una avenida.
+-"Tuvimos suerte, ¿No crees?" \n\n Luxu miró a la ventana. -"No lo sé, Eli."
+Suspiró, llevando su dedo a su cabello.
+-"Es muy raro que haya sabido exactamente qué iba a suceder, dudo mucho que haya sido un accidente." \n\n -"Igual hay que apreciar la ayuda, ¿Sabes? Somos inmortales, más no indestructibles", Elijah comentó. \n\n  -"Hm."
+Luxu pensó un poco.
+-"Creo que tienes razón. De todos modos, no confío en él."
+Se encogió de hombros antes de ver el volante. Su mirada pasó de ahí a la radio, la cuál reproducía una estación aburrida donde los locutores discutían entre sí.
+Suspiró finalmente. \n\n Otra ronda de silencio, Luxu sintiendo la urgencia de hablar una vez más. \n\n -"Y-y... ¿Cómo te han ido las misas?"
+Preguntó el demonio, sin saber realmente cómo sacar algún tema de conversación. Elijah suspiró.
+-"Bien. Más gente está yendo, quizá por las festividades, pero no importa."
+-"Ah, bueno. Sólo preguntaba." \n\n Y otra ronda más de silencio, perdonado por el ruido de la maquinaria de la camioneta.
+Todo iba tranquilo hasta que ambos notaron que la señal iba fallando en la radio, cosa que hizo que Elijah levantase una ceja. El suelo empezó a temblar, y los coches empezaron a chocar.
+Los ojos de Luxu se abrieron de par en par al ver que un trailer iba a chocar contra ellos. \n\n -"¡¡ELIJAH, CUIDADO!!"
+Luxu gritó aterrorizado, empujando la mano de Elijah para que esquivase el trailer, quien volteó a ver a Luxu, aturdido, hasta que tuvieron que parar. 
+Detuvo el coche y ambos salieron, viendo que el suelo se abría.
+-"Ay, no." \n\n Ambos retrocedieron, viendo como de la abertura del suelo salía la figura de otro de los demonios contra los que habían luchado hace unas horas. El diablo se levantó, las grietas verdes en su cuerpo brillaban con fuerza y furia. Dejó salir un rugido alto al cielo, antes de mirar a Luxu y a Elijah, quienes ya tenían sus armas listas...\n\n ———Fin del primer capítulo.———` 
+      },
+      {
+        title: "Capítulo 2: uy",
+        text: `Perate weeeeeee`
+      },
+      {
+        title: "Capítulo 3: perate we",
+        text: `uyyyyyyyyyyyyy`
+      }
+    ];
+
+    function loadChapter(index) {
+      const chapter = chapters[index];
+      document.getElementById("chapterTitle").innerText = chapter.title;
+      document.getElementById("chapterText").innerText = chapter.text;
+    }
+  </script>
+   <a href="VornHekaWiki.HTML" class="back-button">⬅IR A LA WIKI!!!! Alerta de Spoilers cabrones 3:</a>
+</body>
+</html>

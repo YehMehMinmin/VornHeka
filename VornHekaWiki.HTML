@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vörn Heka Wiki Oficial</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0a url('img/castillo_tenebroso_uuuu.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #dcdcdc;
+      display: flex;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    header {
+      background: rgba(10, 0, 20, 0.8);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.8em;
+      color: #8f00ff;
+      font-weight: bold;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 0 10px #8f00ff;
+      backdrop-filter: blur(8px);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #8f00ff;
+      box-shadow: 0 0 10px #8f00ff;
+      transition: 0.4s ease;
+      animation: none;
+    }
+    .logo img:hover {
+      animation: logo-brillo 1s infinite alternate;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 0 20px #ff00aa;
+    }
+    @keyframes logo-brillo {
+      from { filter: brightness(1); }
+      to { filter: brightness(1.5); }
+    }
+    .menu-header {
+      display: flex;
+      gap: 20px;
+      font-size: 0.7em;
+    }
+    .menu-header a {
+      color: #bbb;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .menu-header a:hover {
+      color: #fff;
+    }
+    nav {
+      width: 250px;
+      background: rgba(20, 20, 20, 0.9);
+      padding-top: 120px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow-y: auto;
+      border-right: 2px solid #8f00ff;
+      box-shadow: 0 0 10px #8f00ff;
+    }
+    nav a {
+      display: block;
+      color: #bbb;
+      padding: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #333;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    main {
+      margin-left: 270px;
+      padding: 130px 40px 40px 40px;
+      flex: 1;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+      min-height: 100vh;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(10, 0, 20, 0.8);
+      color: #999;
+      font-size: 0.9em;
+      margin-top: 30px;
+      box-shadow: 0 -5px 10px #8f00ff;
+    }
+    section {
+      margin-bottom: 60px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 20px;
+    }
+    section h2 {
+      color: #ff00aa;
+      border-bottom: 2px solid #8f00ff;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+    .personaje img {
+      width: 300px;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      margin-bottom: 10px;
+    }
+    .personaje img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #ff00aa;
+    }
+    .link-personaje {
+      color: #ff00aa;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .link-personaje:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="imgvh/logoMinmin.png" alt="ayothisismehehehe">
+    <span>Vörn Heka Wiki Oficial</span>
+  </div>
+  <div class="menu-header">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#creditos">Créditos</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#personajes">Personajes Principales</a>
+  <a href="#defarnis">Defarnis</a>
+  <a href="#secundarios">Personajes Secundarios</a>
+  <a href="#villanos">Villanos</a>
+</nav>
+
+<main>
+
+  <section id="defarnis">
+    <h2>Defarnis</h2>
+     <h2>Personajes Principales</h2>
+
+    <div class="personaje">
+      <h3><a class="link-personaje" href="stellrinu.html" target="_blank">Stellrinu Triviny</a></h3>
+      <img src="imgvh/StellrinuFoto.jpg" alt="Stellrinu">
+      <p>El primero de los Defarnis, protector de los inocentes y guerrero justiciero.</p>
+    </div>
+
+    <div class="personaje">
+      <h3><a class="link-personaje" href="luxu.html" target="_blank">Luxu</a></h3>
+      <img src="imgvh/LuxuFoto.jpg" alt="Luxu">
+      <p>Un demonio tímido pero lleno de talento oculto y callado, defensor de la superación y valentía.</p>
+    </div>
+
+    <div class="personaje">
+      <h3><a class="link-personaje" href="elijah.html" target="_blank">Elijah</a></h3>
+      <img src="imgvh/ElijahFoto.jpg" alt="Elijah">
+      <p>Ángel sacerdote con heridas invisibles, guerrero y protector de la libertad.</p>
+    </div>
+
+    <div class="personaje">
+      <h3><a class="link-personaje" href="ake.html" target="_blank">Åke</a></h3>
+      <img src="imgvh/AkeFoto.jpg" alt="Åke">
+      <p>Virtud incansable, resplandor de la independencia y esperanza.</p>
+    </div>
+  </section>
+
+  <section id="secundarios">
+    <h2>Personajes Secundarios</h2>
+     <p>Importantes aliados o figuras que han dejado su huella en la historia.</p>
+    <ul>
+      <li><strong>Boris</strong> - Hijo de Stellrinu y Nekomaru, mezcla de magia y fuego, con alma relajada y valiente.</li>
+      <li><strong>Brutus</strong> - De enemiga mortal a aliada inquebrantable, símbolo de redención.</li>
+      <li><strong>Nekomaru</strong> - Guerrero de una tribu de fuego, valiente Vyapyr. Símbolo de reunión y ardor.</li>
+    </ul>
+  </section>
+
+  <section id="villanos">
+    <h2>Villanos</h2>
+     <p>Fuerzas oscuras y antiguas de vuelta, dispuestas a acabar con todo. No van en orden.</p>
+    <ul>
+      <li><strong>Berserker</strong> - El come-poder que busca devorar fuerza divina y antigua para ser el Princeps Mundi, enemigo mortal de Stellrinu.</li>
+      <li><strong>TheCommander</strong> - Amo del control mental, titiritero de almas, las usa a su favor. Enemigo mortal de Elijah.</li>
+      <li><strong>Alarica</strong> - Creadora de destrucción y zombies orgánicos, causante de la reaparición de antiguos demonios, enemiga de Luxu.</li>
+      <li><strong>Eternal</strong> - Hada corrupta de la memoria, capaz de alterar la realidad con tal de hacer sufrir, enemigo general.</li>
+      <li><strong>Leviathan</strong> - Antiguo pirata hundido en aguas malditas, cazador de seres puros, tirano y avaricioso. Enemigo general.</li>
+      <li><strong>Derek</strong> - El abusador, el quita inocencia... Un depredador vil, cegado por la cabeza de abajo. Enemigo mortal de Luxu.</li>
+      <li><strong>Taimana</strong> - Creación vil de lo que quedó de Alarica, busca acabar con Åke. Enemiga de Åke.</li>
+      <li><strong>Chaork</strong> - Supremo líder de los demonios destructores, amante del caos, y dictador de muerte. Enemigo general.</li>
+      <li><strong>Arkyn</strong> - Mago BigBull de la muerte, usa su magia negra para matar todo a su paso. Enemigo general.</li>
+    </ul>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>¡Hola! Soy Minmin, un artista y escritor de fantasía oscura con amor por la religión, la contradicción y las buenas historias. Soy un adolescente, y empecé mi desmadre a los 6 años.</p>
+  </section>
+
+  <section id="creditos">
+    <h2>Créditos</h2>
+    <p>Creado por Benjamín (Benja), basado en ideas originales propias y apoyo creativo de amigos cercanos y mi noviecito. ♡!</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes encontrarme en redes sociales o escribirme a: <strong>jforme48@gmail.com, o en:</strong></p>
+ <ul>
+      <li><strong>TikTok</strong> - @awnminmin.</li>
+      <li><strong>Twitter</strong> - @YehMehMinmin.</li>
+      <li><strong>GitHub</strong> - YehMehMinmin.</li>
+      <a href="index.html" class="back-button">⬅IR AL LORE!!!! :DDDD</a>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Vörn Heka. Arte, historia y magia hechos con pasión... y amor. 🌌
+</footer>
+
+
+</body>
+</html>
